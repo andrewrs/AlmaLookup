@@ -18,10 +18,9 @@ if (isset($_POST['submit'])) {
     $url = "https://library.gmu.edu";
     $uri = "https://api-na.hosted.exlibrisgroup.com/almaws/v1/items?item_barcode=" . $barcode . "&apikey=l7xxac67479fcd9d4f9687fc3092929bee5e";
     echo $uri;
-    echo "
-					<a style='padding: 0 1rem' href='$uri' target='_blank'>
-						<img src='external-link-16.png' alt='view alma output' title='view alma output (opens in new window)'>
-						</a>";
+    echo "<a style='padding: 0 1rem' href='$uri' target='_blank'>
+        <img src='external-link-16.png' alt='view alma output' title='view alma output (opens in new window)'>
+        </a>";
 }
 // header("Location: $url");
 
